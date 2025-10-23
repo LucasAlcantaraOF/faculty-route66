@@ -12,32 +12,63 @@
 </head>
 
 <body class="container-fluid">
+
+    <div class="background">
+        <img src="/assets/public/route-66-background.jpg" alt="Route 66 background">
+    </div>
     
     <section class="d-flex justify-content-center align-items-center vh-100">
-        <div class="row" style="width: 70%; height: 70%;">
+        <div class="row">
         
-        <!-- LADO ESQUERDO -->
-        <div class="col-8 route-left d-flex flex-column justify-content-between text-white ps-5 pe-4 py-5 gap-4 text-start">
-        <div class="logo">
-            <img src="/assets/public/logo-route66.png" class="logo-img" alt="Logo Route 66">
+            <!-- LADO ESQUERDO -->
+            <div class="col-7 d-flex flex-column justify-content-center text-white ps-5 pe-4 py-5 gap-4 text-start">
+
+            <h1 class="hero-title m-0" style="font-size: 3.6rem;">Seja Bem Vindo(a) a Route 66</h1>
+            <p class="hero-text m-0" style="font-size: 1.5rem">
+                Aqui seu carro dos sonhos vira realidade - escolha, financie e comece a dirigir hoje mesmo. Temos planos flexiveis e suporte completo para você
+            </p>
+            </div>
+
+            <!-- LADO DIREITO (LOGIN) -->
+            <div class="col-5 d-flex justify-content-center align-items-center p-0"
+                style="border-radius: 25px; background-color: #fdfded; min-height: 500px;">
+
+                 <!-- Contêiner interno centralizado -->
+                <div class="d-flex flex-column justify-content-center align-items-center w-100">
+
+                    <div class="logo d-flex justify-content-center mb-4">
+                    <img src="/assets/public/logo-route66-black.png" class="logo-img" alt="Logo Route 66">
+                    </div>
+
+                    <form class="w-75" action="dashboard.html">
+                    <input class="form-control form-control-lg mb-3" type="email" placeholder="Email">
+                    <input class="form-control form-control-lg mb-3" type="password" placeholder="Senha">
+
+                    <a href="#" class="d-flex justify-content-start" style="text-decoration: none; color: black; font-size: 1.2rem;">Esqueceu sua senha?</a>
+
+                    <div class="pt-4">
+                        <button class="btn btn-lg w-100" style="border-radius: 15px; background-color: #50201c; color: white;">ENTRAR</button>
+                    </div>
+
+                    <div class="d-flex justify-content-center pt-5">
+                        <p class="me-2 mb-0">Não possui uma conta?</p>
+                        <a href="#" style="text-decoration: none; color: black;"><strong>Cadastre-se aqui!</strong></a>
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+
         </div>
-        <h2 class="hero-title m-0">Seja Bem Vindo(a) à Route 66</h2>
-        <p class="hero-text m-0">
-            Aqui você conquista o carro dos seus sonhos, aquele carro que quando criança você sempre sonhou em dirigir!
+    </section>
+
+    <footer class="d-flex justify-content-center align-items-center p-0" style="position: absolute; bottom: 40px; width: 100%;">
+        <p class="hero-text m-0" style="color: white; font-size: 1.7rem;">
+            Transações Seguras • Documentação Rápida • Suporte 24/7
         </p>
-        </div>
+    </footer>
 
-    <!-- LADO DIREITO (LOGIN) -->
-    <div class="col-4 d-flex justify-content-center align-items-center bg-white">
-        <form class="w-75" action="dashboard.html">
-            <input class="form-control form-control-lg mb-3" type="email" placeholder="Email">
-            <input class="form-control form-control-lg mb-3" type="password" placeholder="Senha">
-            <button class="btn btn-dark btn-lg w-100">ENTRAR</button>
-        </form>
-    </div>
 
-    </div>
-  </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

@@ -2,6 +2,12 @@ html, body {
     height: 100%;
 }
 
+*{
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 
 /* Index.html */
 

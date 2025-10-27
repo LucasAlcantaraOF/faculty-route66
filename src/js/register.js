@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="form-check mb-4">
             <input class="form-check-input" type="checkbox" id="dadosPermissao">
             <label class="form-check-label" for="dadosPermissao" style="font-size: 0.9rem;">
-              Autorizo a utilização dos meus dados para fins de cadastro e contato.
+              Autorizo o uso dos meus dados para cadastro.
             </label>
           </div>
 

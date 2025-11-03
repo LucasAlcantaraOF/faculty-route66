@@ -26,210 +26,605 @@
     <hr>
 
     <section class="card card-body">
+
+        <!--Header da tabela-->
         <div class="row">
             <div class="col">
                 <h1>Clientes</h1>
             </div>
-            <div class="col text-end">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#novoVeiculoForm" aria-controls="offcanvasExample">
-                    Novo Cliente
-                </button>
-            </div>
+            <div class="col text-end">                                  
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#novoClienteForm" aria-controls="offcanvasExample">
+                    Novo Cliente</button>
         </div>
 
-        
-
-        <table class="mt-4 table table-hover table-striped">
+        <!--Tabela de Clientes-->
+        <table id="pagination" class="mt-4 table table-hover table-striped">
             <thead class="table-dark">
                 <tr>
-                    <th>Placa</th>
+                    <th>ID</th>
                     <th>Foto</th>
-                    <th>Marca</th>
-                    <th>Modelo</th>
-                    <th>Ano</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Bairro</th>
                     <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>ORT-5515</td>
+                    <td>001</td>
+                    <td><img width="80px" src="./img/lucas.png" alt="Foto de cliente"></td>
+                    <td>Lucas Alcantara</td>
+                    <td>lucas.alcantara@email.com</td>
+                    <td>(21) 93018-8356</td>
+                    <td>Dionísio Torres</td>
                     <td>
-                        <img width="100px" src="https://cdn.motor1.com/images/mgl/RLAOx/s1/chevrolet-classic-2015-ganha-ar-condicionado-de-serie-e-parte-de-r-30590.webp" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>Chevrolet</td>
-                    <td>Classic</td>
-                    <td>2014</td>
+                    </tr>
+                    <tr>
+                    <td>002</td>
+                    <td><img width="80px" src="./img/rayka.png" alt="Foto de cliente"></td>
+                    <td>Rayka Pinho</td>
+                    <td>rayka.pinho@email.com</td>
+                    <td>(85) 94653-2905</td>
+                    <td>Papicu</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>ORT-5516</td>
+                    </tr>
+                    <tr>
+                    <td>003</td>
+                    <td><img width="80px" src="./img/caua.png" alt="Foto de cliente"></td>
+                    <td>Caua Pinto</td>
+                    <td>caua.pinto@email.com</td>
+                    <td>(85) 99639-2695</td>
+                    <td>Papicu</td>
                     <td>
-                        <img width="100px" src="https://randompicturegenerator.com/img/car-generator/ge72f20c5b33e4c0a621b0bf302fb15006de3514296ec3539d8d34fc3aaad4ca02304eec448625b72bc8140446bc16005_640.jpg" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>Ford</td>
-                    <td>Fusion</td>
-                    <td>2015</td>
+                    </tr>
+                    <tr>
+                    <td>004</td>
+                    <td><img width="80px" src="./img/sammy.png" alt="Foto de cliente"></td>
+                    <td>Sammy Samu</td>
+                    <td>sammy.samu@email.com</td>
+                    <td>(11) 98999-4025</td>
+                    <td>Joaquim Távora</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>ORT-5517</td>
+                    </tr>
+                    <tr>
+                    <td>005</td>
+                    <td><img width="80px" src="./img/alessandro.png" alt="Foto de cliente"></td>
+                    <td>Alessandro Feitoza</td>
+                    <td>alessandro.feitoza@email.com</td>
+                    <td>(88) 93794-6071</td>
+                    <td>Varjota</td>
                     <td>
-                        <img width="100px" src="https://randompicturegenerator.com/img/car-generator/g30ca8483cddcc8536f093ca5a80e4e17d7e49eab202dd29bfecab6fb6bc37e92e1b27cd4f6ea693ba94a2de8fc455426_640.jpg" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>Volkswagen</td>
-                    <td>Golf</td>
-                    <td>2016</td>
+                    </tr>
+                    <tr>
+                    <td>006</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/76.jpg" alt="Foto de cliente"></td>
+                    <td>Deivid Kenedy</td>
+                    <td>deivid.kenedy@email.com</td>
+                    <td>(21) 98905-2572</td>
+                    <td>Aldeota</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>ORT-5518</td>
+                    </tr>
+                    <tr>
+                    <td>007</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/17.jpg" alt="Foto de cliente"></td>
+                    <td>Breno Almeida</td>
+                    <td>breno.almeida@email.com</td>
+                    <td>(21) 94315-5715</td>
+                    <td>Benfica</td>
                     <td>
-                        <img width="100px" src="https://randompicturegenerator.com/img/car-generator/gab8e2921a9c9aa8125712c735d00e4171c2a69786cf902e19b99141f706b152f5b4d11cc31617ae73b7974848dd30901_640.jpg" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>Honda</td>
-                    <td>Civic</td>
-                    <td>2017</td>
+                    </tr>
+                    <tr>
+                    <td>008</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/81.jpg" alt="Foto de cliente"></td>
+                    <td>Joel Ribeiro</td>
+                    <td>joel.ribeiro@email.com</td>
+                    <td>(41) 97719-7268</td>
+                    <td>Parquelândia</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>ORT-5519</td>
+                    </tr>
+                    <tr>
+                    <td>009</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/women/57.jpg" alt="Foto de cliente"></td>
+                    <td>Filipe Costa</td>
+                    <td>filipe.costa@email.com</td>
+                    <td>(31) 90538-4318</td>
+                    <td>Mondubim</td>
                     <td>
-                        <img width="100px" src="https://randompicturegenerator.com/img/car-generator/g06d7c4c9278029ba49885e97e8be06ea5da7488f521d67ea0ecb388d504e73378af016489c49ddea86a1bde5b5c4dbe8_640.jpg" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>Fiat</td>
-                    <td>Argo</td>
-                    <td>2018</td>
+                    </tr>
+                    <tr>
+                    <td>010</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/women/21.jpg" alt="Foto de cliente"></td>
+                    <td>Maria Eduarda Ferreira</td>
+                    <td>maria.eduarda.ferreira@email.com</td>
+                    <td>(21) 98304-9542</td>
+                    <td>Passaré</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>ORT-5520</td>
+                    </tr>
+                    <tr>
+                    <td>011</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/26.jpg" alt="Foto de cliente"></td>
+                    <td>Thiago Diaz</td>
+                    <td>thiago.diaz@email.com</td>
+                    <td>(88) 94826-4290</td>
+                    <td>Cidade dos Funcionários</td>
                     <td>
-                        <img width="100px" src="https://randompicturegenerator.com/img/car-generator/g4d1c879a6da5a78caef9f1c01a14286fe8178ed6d469708ffae2c064be5942e977145da83019076285ae398124796792_640.jpg" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>Renault</td>
-                    <td>Sandero</td>
-                    <td>2019</td>
+                    </tr>
+                    <tr>
+                    <td>012</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/39.jpg" alt="Foto de cliente"></td>
+                    <td>Sam Silva</td>
+                    <td>sam.silva@email.com</td>
+                    <td>(88) 97730-3111</td>
+                    <td>Joaquim Távora</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>ORT-5521</td>
+                    </tr>
+                    <tr>
+                    <td>013</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/4.jpg" alt="Foto de cliente"></td>
+                    <td>Kevin Soares</td>
+                    <td>kevin.soares@email.com</td>
+                    <td>(88) 97603-4282</td>
+                    <td>Meireles</td>
                     <td>
-                        <img width="100px" src="https://cdn.motor1.com/images/mgl/RLAOx/s1/chevrolet-classic-2015-ganha-ar-condicionado-de-serie-e-parte-de-r-30590.webp" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>Toyota</td>
-                    <td>Corolla</td>
-                    <td>2020</td>
+                    </tr>
+                    <tr>
+                    <td>014</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/5.jpg" alt="Foto de cliente"></td>
+                    <td>Widley Santos</td>
+                    <td>widley.santos@email.com</td>
+                    <td>(41) 97080-5550</td>
+                    <td>Fátima</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>ORT-5522</td>
+                    </tr>
+                    <tr>
+                    <td>015</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/11.jpg" alt="Foto de cliente"></td>
+                    <td>Rubens Nogueira</td>
+                    <td>rubens.nogueira@email.com</td>
+                    <td>(85) 95877-2228</td>
+                    <td>Passaré</td>
                     <td>
-                        <img width="100px" src="https://cdn.motor1.com/images/mgl/RLAOx/s1/chevrolet-classic-2015-ganha-ar-condicionado-de-serie-e-parte-de-r-30590.webp" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>Nissan</td>
-                    <td>Sentra</td>
-                    <td>2021</td>
+                    </tr>
+                    <tr>
+                    <td>016</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/81.jpg" alt="Foto de cliente"></td>
+                    <td>Ricardo Bandeira</td>
+                    <td>ricardo.bandeira@email.com</td>
+                    <td>(48) 97362-1109</td>
+                    <td>Parquelândia</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>ORT-5523</td>
+                    </tr>
+                    <tr>
+                    <td>017</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/72.jpg" alt="Foto de cliente"></td>
+                    <td>James Rodrigues</td>
+                    <td>james.rodrigues@email.com</td>
+                    <td>(85) 93991-4311</td>
+                    <td>Fátima</td>
                     <td>
-                        <img width="100px" src="https://cdn.motor1.com/images/mgl/RLAOx/s1/chevrolet-classic-2015-ganha-ar-condicionado-de-serie-e-parte-de-r-30590.webp" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>Mitsubishi</td>
-                    <td>Outlander</td>
-                    <td>2022</td>
+                    </tr>
+                    <tr>
+                    <td>018</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/66.jpg" alt="Foto de cliente"></td>
+                    <td>Andrew Sousa</td>
+                    <td>andrew.sousa@email.com</td>
+                    <td>(41) 95584-2972</td>
+                    <td>Praia de Iracema</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
-                <tr>
-                    <td>ORT-5524</td>
+                    </tr>
+                    <tr>
+                    <td>019</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/6.jpg" alt="Foto de cliente"></td>
+                    <td>Pedro José Da Silva Ribeiro Albano</td>
+                    <td>pedro.jose.da.silva.ribeiro.albano@email.com</td>
+                    <td>(62) 96987-1137</td>
+                    <td>Montese</td>
                     <td>
-                        <img width="100px" src="https://cdn.motor1.com/images/mgl/RLAOx/s1/chevrolet-classic-2015-ganha-ar-condicionado-de-serie-e-parte-de-r-30590.webp" alt="">
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                    <td>BMW</td>
-                    <td>X3</td>
-                    <td>2023</td>
+                    </tr>
+                    <tr>
+                    <td>020</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/women/7.jpg" alt="Foto de cliente"></td>
+                    <td>Eduarda Guimarães</td>
+                    <td>eduarda.guimaraes@email.com</td>
+                    <td>(21) 92261-4674</td>
+                    <td>Varjota</td>
                     <td>
-                        <a href="" class="btn btn-sm btn-outline-warning">Editar</a>
-                        <a href="" class="btn btn-sm btn-outline-danger">Excluir</a>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
                     </td>
-                </tr>
+                    </tr>
+                    <tr>
+                    <td>021</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/21.jpg" alt="Foto de cliente"></td>
+                    <td>Melky Barbosa</td>
+                    <td>melky.barbosa@email.com</td>
+                    <td>(48) 92320-8136</td>
+                    <td>Parquelândia</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>022</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/women/8.jpg" alt="Foto de cliente"></td>
+                    <td>Laiane Santos</td>
+                    <td>laiane.santos@email.com</td>
+                    <td>(11) 96018-5283</td>
+                    <td>Montese</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>023</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/63.jpg" alt="Foto de cliente"></td>
+                    <td>Caua Lima</td>
+                    <td>caua.lima@email.com</td>
+                    <td>(48) 95196-9691</td>
+                    <td>Mondubim</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>024</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/12.jpg" alt="Foto de cliente"></td>
+                    <td>Thales Farias</td>
+                    <td>thales.farias@email.com</td>
+                    <td>(31) 92462-8669</td>
+                    <td>Mondubim</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>025</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/11.jpg" alt="Foto de cliente"></td>
+                    <td>Paulo Viana</td>
+                    <td>paulo.viana@email.com</td>
+                    <td>(62) 92356-2108</td>
+                    <td>Cocó</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>026</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/5.jpg" alt="Foto de cliente"></td>
+                    <td>Arthur Mendes</td>
+                    <td>arthur.mendes@email.com</td>
+                    <td>(62) 97412-9789</td>
+                    <td>Meireles</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>027</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/60.jpg" alt="Foto de cliente"></td>
+                    <td>Italo Savio</td>
+                    <td>italo.savio@email.com</td>
+                    <td>(61) 93352-6489</td>
+                    <td>Parangaba</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>028</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/64.jpg" alt="Foto de cliente"></td>
+                    <td>Samuel Vítor</td>
+                    <td>samuel.vitor@email.com</td>
+                    <td>(88) 92929-7189</td>
+                    <td>Messejana</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>029</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/80.jpg" alt="Foto de cliente"></td>
+                    <td>Marcelo Brito</td>
+                    <td>marcelo.brito@email.com</td>
+                    <td>(48) 90320-3495</td>
+                    <td>Jardim América</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>030</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/26.jpg" alt="Foto de cliente"></td>
+                    <td>Frederico Araujo</td>
+                    <td>frederico.araujo@email.com</td>
+                    <td>(61) 90564-7732</td>
+                    <td>Cocó</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>031</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/women/60.jpg" alt="Foto de cliente"></td>
+                    <td>Ana Paula Souza</td>
+                    <td>ana.paula.souza@email.com</td>
+                    <td>(48) 96383-8822</td>
+                    <td>Parquelândia</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>032</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/67.jpg" alt="Foto de cliente"></td>
+                    <td>Douglas Castro</td>
+                    <td>douglas.castro@email.com</td>
+                    <td>(61) 92308-2098</td>
+                    <td>Aldeota</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>033</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/80.jpg" alt="Foto de cliente"></td>
+                    <td>Helgut O Noir</td>
+                    <td>helgut.o.noir@email.com</td>
+                    <td>(62) 91499-8956</td>
+                    <td>Cidade dos Funcionários</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>034</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/57.jpg" alt="Foto de cliente"></td>
+                    <td>Samir Fechine</td>
+                    <td>samir.fechine@email.com</td>
+                    <td>(41) 96244-6974</td>
+                    <td>Luciano Cavalcante</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>035</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/35.jpg" alt="Foto de cliente"></td>
+                    <td>Cauã Nascimento</td>
+                    <td>caua.nascimento@email.com</td>
+                    <td>(11) 91015-5121</td>
+                    <td>Centro</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>036</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/1.jpg" alt="Foto de cliente"></td>
+                    <td>Diego Ferreira</td>
+                    <td>diego.ferreira@email.com</td>
+                    <td>(61) 96987-6539</td>
+                    <td>Varjota</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>037</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/70.jpg" alt="Foto de cliente"></td>
+                    <td>Ronaldy Brandão</td>
+                    <td>ronaldy.brandao@email.com</td>
+                    <td>(11) 94033-6930</td>
+                    <td>Benfica</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>038</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/10.jpg" alt="Foto de cliente"></td>
+                    <td>Peterson Alves</td>
+                    <td>peterson.alves@email.com</td>
+                    <td>(11) 97178-1562</td>
+                    <td>Varjota</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>039</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/85.jpg" alt="Foto de cliente"></td>
+                    <td>Rael Carvalho</td>
+                    <td>rael.carvalho@email.com</td>
+                    <td>(88) 90291-2579</td>
+                    <td>Montese</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>040</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/62.jpg" alt="Foto de cliente"></td>
+                    <td>Luan Parente</td>
+                    <td>luan.parente@email.com</td>
+                    <td>(88) 97121-2194</td>
+                    <td>Centro</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>041</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/women/48.jpg" alt="Foto de cliente"></td>
+                    <td>Ana Beatriz Martins</td>
+                    <td>ana.beatriz.martins@email.com</td>
+                    <td>(11) 95606-7768</td>
+                    <td>Fátima</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>042</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/women/1.jpg" alt="Foto de cliente"></td>
+                    <td>Lara Dias</td>
+                    <td>lara.dias@email.com</td>
+                    <td>(21) 99198-2421</td>
+                    <td>Aldeota</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>043</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/women/40.jpg" alt="Foto de cliente"></td>
+                    <td>Helaíne Lavor</td>
+                    <td>helaine.lavor@email.com</td>
+                    <td>(48) 96275-4125</td>
+                    <td>Parangaba</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>044</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/83.jpg" alt="Foto de cliente"></td>
+                    <td>Robson Pereira</td>
+                    <td>robson.pereira@email.com</td>
+                    <td>(31) 98887-1487</td>
+                    <td>Mondubim</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>045</td>
+                    <td><img width="80px" src="https://randomuser.me/api/portraits/men/10.jpg" alt="Foto de cliente"></td>
+                    <td>Andrey Ricardo</td>
+                    <td>andrey.ricardo@email.com</td>
+                    <td>(21) 99545-6710</td>
+                    <td>Centro</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-warning">Editar</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Excluir</a>
+                    </td>
+                    </tr>
 
             </tbody>
         </table>
+
     </section>
-    
 
+    <!--Formulario de Adição de Cliente-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="novoClienteForm" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Novo Cliente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
 
+    <div class="offcanvas-body">
+        <form action="">
+        <label for="nome" class="form-label">Nome Completo</label>
+        <input type="text" id="nome" class="form-control mb-3" placeholder="Digite o nome do cliente" required>
 
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" id="email" class="form-control mb-3" placeholder="exemplo@email.com" required>
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="novoVeiculoForm" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Novo Veiculo</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <form action="">
-        <label for="placa">Placa</label>
-        <input type="text" class="form-control mb-3" placeholder="Digite aqui">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" id="telefone" class="form-control mb-3" placeholder="(00) 00000-0000" required>
 
-        <label for="marca">Marca</label>
-        <select class="form-select mb-3" name="" id="">
-            <option>-- Selecione --</option>
-            <option>Chevrolet</option>
-            <option>Volkswagen</option>
-            <option>Toyota</option>
-            <option>Fiat</option>
-        </select>
+        <label for="bairro" class="form-label">Bairro</label>
+        <input type="text" id="cidade" class="form-control mb-3" placeholder="Digite o Bairro" required>
 
-        <label for="modelo">Modelo</label>
-        <select class="form-select mb-3" name="" id="">
-            <option>-- Selecione --</option>
-            <option>Classic</option>
-            <option>Celta</option>
-            <option>Gol</option>
-            <option>Uno</option>
-        </select>
+        <label for="foto" class="form-label">Foto</label>
+        <input type="file" id="foto" class="form-control mb-3" accept="image/*">
 
-        <label for="ano">Ano</label>
-        <input type="number" min="1950" max="2026" class="form-control mb-3" placeholder="Digite aqui">
-
-        <label for="foto">Foto</label>
-        <input type="file" class="form-control mb-3" placeholder="Digite aqui">
-
-        <button class="btn btn-dark w-100">PRONTO</button>
-
-    </form>
-
-  </div>
-</div>
+        <button class="btn btn-dark w-100" type="submit">Salvar Cliente</button>
+        </form>
+    </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
